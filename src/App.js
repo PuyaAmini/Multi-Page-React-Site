@@ -19,14 +19,15 @@ function App() {
         <NavLink to='/About'>About</NavLink>
         <NavLink to='/Contact'>Contact</NavLink>
         </nav>
-        <nav>
+
+        {/* <nav> */}
           <Routes>
             <Route path='/'  element={<Home/>}/>
             <Route path='/About' element={<About/>}/>
             <Route path='/Contact' element={<Contact/>}/>
           </Routes>
 
-        </nav>
+        {/* </nav> */}
       </BrowserRouter>
     </div>
   );
