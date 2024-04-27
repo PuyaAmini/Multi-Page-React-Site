@@ -4,6 +4,7 @@ import { BrowserRouter, Route , Routes  , Link, NavLink} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Article from './pages/Article';
 
 
 function App() {
@@ -22,9 +23,13 @@ function App() {
 
         {/* <nav> */}
           <Routes>
+
             <Route path='/'  element={<Home/>}/>
             <Route path='/About' element={<About/>}/>
             <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/articles/:id' element={<Article/>}/>
+            {/* ":" is Route Parameter and it say the id part is changeable */}
+            
           </Routes>
 
         {/* </nav> */}
