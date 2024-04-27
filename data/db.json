@@ -10,13 +10,13 @@
       "id": "2",
       "title": "5 React Tips for Beginners",
       "author": "Luigi",
-      "body": ""},
+      "body": "**Supercharge Your Coding with VS Code Packages!** 💻- **Prettier**: For impeccable code formatting.- **ESLint**: To keep your code clean.- **GitLens**: Git superpowers at your fingertips.- **Live Server**: Instant real-time preview.- **Bracket Pair Colorizer**: A rainbow to navigate nested code."
+    },
     {
       "id": "3",
       "title": "VS Code Best Packages",
       "author": "Mario",
       "body": "**Supercharge Your Coding with VS Code Packages!** 💻 - **Prettier**: For impeccable code formatting.- **ESLint**: To keep your code clean.- **GitLens**: Git superpowers at your fingertips.- **Live Server**: Instant real-time preview.- **Bracket Pair Colorizer**: A rainbow to navigate nested code."
-      
     }
   ]
 }

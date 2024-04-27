@@ -16,7 +16,7 @@ nav a {
   padding: 4px 10px;
 }
 /* show current active page */
-nav a.active{
+nav a.active {
   color: white;
   background: #333;
   text-decoration: none;
