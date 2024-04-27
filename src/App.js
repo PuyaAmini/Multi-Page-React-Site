@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes, Link, NavLink } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  NavLink,
+  Navigate,
+} from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -28,6 +34,10 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/articles/:id" element={<Article />} />
           {/* ":" is Route Parameter and it say the id part is changeable */}
+
+          <Route path="*" element={<Navigate to="/" replace />} />
+          {/* Redirect any other path to the home page */}
+          {/* "replace" prop to prevent creating a new entry in the history stack */}
         </Routes>
 
         {/* </nav> */}
