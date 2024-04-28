@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Home from './pages/Home'
@@ -23,6 +23,7 @@ function App() {
         <Route path="/About" element={<About/>}/>
         <Route path="/Contact" element={<Contact/>}/>
         <Route path='/articles/:id' element={<Article/>}/>
+        <Route path="*" element={<Navigate to="/" replace/>}/>
       </Routes>
       </BrowserRouter>
     </div>
