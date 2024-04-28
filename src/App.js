@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <nav>
       <h1>Howya?</h1>
-      <NavLink exact to={'/'}>Home</NavLink>
+      <NavLink  to={'/'}>Home</NavLink>
       <NavLink to={'/Contact'}>Contact</NavLink>
       <NavLink to={'/About'}>About</NavLink>
       </nav>

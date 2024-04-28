@@ -1,15 +1,24 @@
 import React from "react";
+import useFetch from "../hooks/useFetch";
+
+// styles
+import './Home.css'
 
 export default function Home() {
+  const {data:articles , isPending , error} =useFetch('http://localhost:3000/articles')
+
   return (
-    <div>
-      <h2>Home</h2>
-      <p>
-        To find a laptop wallpaper that doesn’t strain your eyes, you can search
-        for phrases like “eye-friendly laptop wallpapers,” “relaxing desktop
-        backgrounds,” or “calming wallpapers.” These searches should help you
-        discover soothing images suitable for your laptop’s background
-      </p>
+    <div className="home">
+      <h2>Articles</h2>
+      {isPending && <React.Fragment>Loading...</React.Fragment>}
+      {error && <React.Fragment>{error}</React.Fragment>}
+      {articles && articles.map((article)=>(
+        <div key={article.id} className="card">
+          <h3>{article.title}</h3>
+          <div>{article.author}</div>
+        
+        </div>
+      ))}
     </div>
   );
 }
